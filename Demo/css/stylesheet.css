@@ -10,9 +10,9 @@ https://960.gs/demo.html <-- find all the measurements
 
 */
 .wrapper{
-	width: 940px;
+	width: 960px;
 	height: 100%;
-	margin: 10px auto 10px auto;
+	margin: 20px auto 20px auto;
 	background-color: white;
 	display: block;
 }
@@ -71,4 +71,34 @@ h6{
 	font-size: 20px;
 	margin: 0px;
 	padding: 0px;
+}
+
+/*Clean Submit Button
+
+Colors can be ajusted according to https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+Font can be ajusted
+
+
+*/
+
+button{
+	width: 150px;
+	height: 40px;
+	padding: auto;
+	text-align: center;
+    display: block;
+    font-size: 16px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+#button1{
+	background-color: #757575;
+	border-radius: 20px;
+	border: 3px solid #424242;
+	font-family: 'Roboto', sans-serif;
+	color: #212121;
+}
+#button1:hover{
+	background-color: #616161;
+	color: #212121;
 }
