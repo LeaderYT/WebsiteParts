@@ -7,27 +7,84 @@
 
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
 </head>
 <body>
-	<!--Wrapper is aroud the whole site!-->
-	<div class="wrapper">
-		<h2>Demo page</h2>
-			<div class="space"></div>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);">
+	  <a class="navbar-brand" href="#"><strong>Website Parts</strong></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarText">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#components"><strong>Components</strong><span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled"><strong>Comming soon!</strong></a>
+	      </li>
+	    </ul>
+	    <span class="navbar-text">
+	      <strong>
+		  Made By: Tim van den Akker
+		  </strong>
+	    </span>
+	  </div>
+	</nav>
+
+	<div class="jumbotron vertical-center mb-0" id="nav">
+		<div class="container">
+		  <h1 class="display-1">Welcome to the Demo Page of Websiteparts!</h1>
+		  <p class="lead text-center mt-5">In this website can you find idea's, design's and sample code free to use</p>
+		  <hr class="my-4">
+		  <p class="text-center">This demopage and its code is free. Feel free to support me!</p>
+		  <p class="lead text-center">
+			<a class="btn btn-primary btn-lg" onclick="function Unavailable(){alert('Patreon isnt added jet! But thanks for wanting to support me :)')};Unavailable()" role="button">Patreon</a>
+		  </p>
+	  </div>
+	</div>
+
+	<!--Wrapper is around the whole site!-->
+	<div class="container">
+		<div id="components"></div>
+		<h2 class="mt-5">Components</h2>
+		<div class="space"></div>
 		<div id="firstPart">
 			<!--Clean Submit Button-->
-			<button id="button1">Black</button>
+			<button id="button1" class="my-2" onclick="function Unavailable(){alert('You clicked the Black button')};Unavailable()">Black</button>
+			<button id="button2" class="my-2" onclick="function Unavailable(){alert('You clicked the Blue button')};Unavailable()">Blue</button>
+			<button id="button3" class="my-2" onclick="function Unavailable(){alert('You clicked the Red button')};Unavailable()">Red</button>
 				<hr>
 			<!--Social Media-->
-			<div id="socialMedia">
+			<div id="socialMedia" class="mb-5">
 				<a href="https://www.instagram.com/"><img src="css/img/instagram-14.svg" class="SM_icon"></a>
 				<a href="https://www.facebook.com/"><img src="css/img/facebook-4.svg" class="SM_icon"></a>
 				<a href="https://twitter.com/"><img src="css/img/twitter-4.svg" class="SM_icon"></a>
 				<a href="tel:123 456 789"><img src="css/img/phone-8.svg" class="SM_icon"></a>
 				<a href="emailto:testuser123@gmail.com"><img src="css/img/email-10.svg" class="SM_icon"></a>
 			</div>
-			<div class="space"></div>
+
+
+				<h3 class="text-center">Stretch the page!</h3>
+				<p class="text-center mb-3"><strong>And see what happens!</strong></p>
+				<!--This will always center the text nomatter the size-->
+				<div class="col-sm-12"><p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p></div>
+				<!--This will always center the text until it hit the sm size-->
+				<div class="col-sm-12"><p class="text-sm-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p></div>
+
+			<div class="bigSpace"></div>
 		</div>
 	</div>
-	
+
+	<!--Bootstrap JS-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
