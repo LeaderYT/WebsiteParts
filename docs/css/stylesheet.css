@@ -33,7 +33,7 @@ getbootstrap.com
 */
 
 .jumbotron {
-    background: url("img/83603-636216266356158373-16x9.jpg") no-repeat center center; 
+    background: url("https://cdn.lynda.com/course/83603/83603-636216266356158373-16x9.jpg") no-repeat center center; 
     height: 100vh;
 	background-size: cover;
 }
