@@ -2,7 +2,8 @@
 
 body{
 	background-color: #eaeaea;
-
+	margin: 0px;
+	padding: 0px;
 }
 html{
 	scroll-behavior: smooth;
@@ -190,3 +191,43 @@ Standard size = 50 height (with margin)
 	position: relative;
 	bottom: 100px;
 }
+
+/* Footer */
+
+
+
+#footer {
+    background:  #ffffff !important;
+}
+#footer h5{
+    border-left: 3px solid #181819;
+    color:#181819;
+}
+#footer a {
+    color: #000000;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+#footer a.hover {
+    color: #4A4A4B;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+

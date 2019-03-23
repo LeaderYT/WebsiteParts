@@ -4,6 +4,8 @@
 	<title>Demo Page</title>
 	<meta charset="utf-8"/>
 	<meta name="author" content="Tim van den Akker"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -16,7 +18,8 @@
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);">
+	<!--Navbar-->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);">
 	  <a class="navbar-brand" href="#"><strong>Website Parts</strong></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -27,7 +30,7 @@
 	        <a class="nav-link" href="#components"><strong>Components</strong><span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link disabled"><strong>Comming soon!</strong></a>
+	        <a class="nav-link disabled"><strong>Coming soon!</strong></a>
 	      </li>
 	    </ul>
 	    <span class="navbar-text">
@@ -38,6 +41,7 @@
 	  </div>
 	</nav>
 
+	<!--Eye catcher-->
 	<div class="jumbotron vertical-center mb-0" id="nav">
 		<div class="container">
 		  <h1 class="display-1">Welcome to the Demo Page of Websiteparts!</h1>
@@ -50,7 +54,7 @@
 	  </div>
 	</div>
 
-	<!--Wrapper is around the whole site!-->
+	<!--Main Content Site-->
 	<div class="container">
 		<div id="components"></div>
 		<h2 class="mt-5">Components</h2>
@@ -69,8 +73,6 @@
 				<a href="tel:123 456 789"><img src="css/img/phone-8.svg" class="SM_icon"></a>
 				<a href="emailto:testuser123@gmail.com"><img src="css/img/email-10.svg" class="SM_icon"></a>
 			</div>
-
-
 				<h3 class="text-center">Stretch the page!</h3>
 				<p class="text-center mb-3"><strong>And see what happens!</strong></p>
 				<!--This will always center the text nomatter the size-->
@@ -78,9 +80,33 @@
 				<!--This will always center the text until it hit the sm size-->
 				<div class="col-sm-12"><p class="text-sm-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p></div>
 
-			<div class="bigSpace"></div>
+			<div class="space"></div>
 		</div>
 	</div>
+
+	<!--Footer-->
+	<section id="footer" class="py-5" style="box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.3), 0 4px 50px 0 rgba(0, 0, 0, 0.3);">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-center text-md-center w-100">
+				<div class="col-xs-12 mx-auto">
+					<h5 class="mb-3 pb-1 pl-2">Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();">Home</a></li>
+						<li><a href="javascript:void();">About</a></li>
+						<li><a href="javascript:void();">FAQ</a></li>
+						<li><a href="javascript:void();">Get Started</a></li>
+						<li><a href="javascript:void();">Videos</a></li>
+					</ul>
+				</div>
+			<div class="row text-center text-xs-center text-sm-center text-md-center w-100">
+				<div class="col-xs-12 mx-auto text-center text-black px-4 text-xs-center">
+					<p>This is a website to experiment / inspire for building their own website!</p>
+					<p class="h6">&copy All right Reversed. Tim van den Akker</p>
+				</div>
+			</div>	
+		</div>
+	</section>
+
 
 	<!--Bootstrap JS-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
