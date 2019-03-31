@@ -13,6 +13,7 @@ html{
 
 hr{
 	width: 630px;
+    max-width: 80vw;
 	border: 1px solid black;
 	border-radius: 100px;
 	margin-top: 25px;
@@ -59,22 +60,21 @@ https://material.io/design/typography/the-type-system.html#type-scale <-- accord
 
 */
 
-h1{
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: -1.5;
-	text-align: center;
-	font-size: 0.7em;
-	text-decoration-style: regular;
-	margin: 0px;
-	padding: 0px;
+h1 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -1.5px;
+    text-align: center;
+    font-size: 0.7em;
+    margin: 0px;
+    padding: 0px;
 }
-h2{
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: -0.5;
-	text-align: center;
-	font-size: 60px;
-	margin: 0px;
-	padding: 0px;
+h2 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -0.5px;
+    text-align: center;
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
 }
 h3{
 	font-family: 'Roboto', sans-serif;
@@ -84,13 +84,13 @@ h3{
 	margin: 0px;
 	padding: 0px;
 }
-h4{
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: 0.25;
-	text-align: center;
-	font-size: 34px;
-	margin: 0px;
-	padding: 0px;
+h4 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.25px;
+    text-align: center;
+    font-size: 34px;
+    margin: 0px;
+    padding: 0px;
 }
 h5{
 	font-family: 'Roboto', sans-serif;
@@ -102,7 +102,7 @@ h5{
 }
 h6{
 	font-family: 'Roboto', sans-serif;
-	letter-spacing: 0.15;
+	letter-spacing: 0.15px;
 	text-align: center;
 	font-size: 20px;
 	margin: 0px;
@@ -231,3 +231,14 @@ Standard size = 50 height (with margin)
     font-weight: 700;
 }
 
+
+@media screen and (max-width: 330px) {
+    .navbar-brand {
+        font-size: 16px !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .test2 {
+        font-size: 14px !important;
+    }
+}
